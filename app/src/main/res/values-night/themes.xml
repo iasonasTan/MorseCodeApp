@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MorseCodeApp" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF6200EE</item>
+        <item name="colorSecondary">#FF03DAC5</item>
+    </style>
+</resources>

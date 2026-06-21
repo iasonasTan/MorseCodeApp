@@ -1,14 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical"
-	android:gravity="center">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/app_name"
-		android:textSize="25sp" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/fragment_adapter"
+        android:layout_marginHorizontal="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/hr"
+        android:layout_marginBottom="0dp" />
 
-</LinearLayout>
+    <!-- Horizontal line for decoration -->
+    <View
+        android:id="@+id/hr"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_marginBottom="5dp"
+        android:background="@color/contrast" />
+
+    <!-- TODO This must be changed to an actual navigation view -->
+    <View
+	android:layout_alignParentBottom="true"
+	android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
